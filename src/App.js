@@ -5,23 +5,17 @@ import './App.css';
 
 class Cards extends React.Component {
   render() {
-    let cards = ['X']; // 2x2 grid 
-    let rows = 3
+    let cards = [{available: true}]; // 2x2 grid 
+    let rows = 20
     let numberOfEmptySquares = Math.pow(rows, 2) - 1
     for (var i = 0; i < numberOfEmptySquares; i++) {
-      cards.push('O')
+      cards.push({available:false})
     }
-    console.log(cards)
-    function shuffle(array) {
-      array.sort(() => Math.random() - 0.5);
-    }
-    shuffle(cards)
-    // flip = () => {
 
-    // }
     const squares = cards.map((card, index) =>
-      <div className="square" key={index} onClick={flip}>{card}</div>
+  <div className="square" key={index}></div>
     )
+    // Now need conditional rendering to display availble squares as different colour to unavailable squares 
     return (
       <div className="square-container">{squares}</div>
     )
@@ -29,15 +23,7 @@ class Cards extends React.Component {
 }
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isFlipped: false
-    }
-  }
-  flip = () => {
 
-  }
   render() {
     return (
       <div className="App">

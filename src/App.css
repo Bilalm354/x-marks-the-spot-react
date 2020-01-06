@@ -1,17 +1,35 @@
+.App {
+  width: 100%;
+  margin: 0 auto;
+  /* justify-content: center; */
+  border: 3
+}
+
 .square-container {
   display: grid;
-  grid-template-columns: repeat(3, 200px);
-  grid-template-rows: repeat(3, 200px);
-  grid-gap: 1em;
-  text-align: center;
+  grid-template-columns: repeat(20, 40px);
+  grid-template-rows: repeat(20, 40px);
+  grid-gap: 5px;
+  justify-content: center;
+  margin: 0 auto;
+  background:white;
 }
 
 .square {
-  background:tomato;
-  padding: 5em;
-  color: tomato
+  background:lightseagreen;
+  /* border: 3px solid white; */
 }
 
 .square:hover{
-  background: blue;
+  background: #CCFF99	;
 }
+
+.unavailable{
+  background: #CCCCCC
+}
+
+/* TODO: 
+[ ] Separate classes for available and unavailable squares 
+[ ] Change cursor to clickable on hover
+
+*/
