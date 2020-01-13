@@ -1,5 +1,5 @@
 First prototype - X marks the spot game, state is local. 
-[ ] Create cards, ' ' or 'X'
+[x] Create cards, ' ' or 'X'
 [ ] repeat in grid - One of these should be an X and the rest should be an empty space 
 [ ] create a flip function for all cards to be flipped 
 [ ] function to flip a card onClick that will reveal whether the card was empty or the X 

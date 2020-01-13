@@ -1,8 +1,6 @@
 import React from 'react';
 import './App.css';
 
-
-
 class Cards extends React.Component {
   render() {
     let cards = [{available: true}]; // 2x2 grid 

@@ -1,23 +1,26 @@
-.App {
+html{
   width: 100%;
+  height: 100%;
+  background: #191A1A;
+}
+
+.App {
+
   margin: 0 auto;
-  /* justify-content: center; */
-  border: 3
 }
 
 .square-container {
   display: grid;
-  grid-template-columns: repeat(20, 40px);
-  grid-template-rows: repeat(20, 40px);
+  grid-template-columns: repeat(15, 2.8vh);
+  grid-template-rows: repeat(25, 2.8vh);
   grid-gap: 5px;
   justify-content: center;
   margin: 0 auto;
-  background: #191A1A;
+  margin-top: 2em;
 }
 
 .square {
   background:lightseagreen;
-  /* border: 3px solid white; */
 }
 
 .square:hover{
